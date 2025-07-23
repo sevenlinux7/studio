@@ -1,10 +1,11 @@
 import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
-import Packages from '@/components/landing/Packages';
-import Testimonials from '@/components/landing/Testimonials';
-import Schedule from '@/components/landing/Schedule';
-import SignUp from '@/components/landing/SignUp';
+import Features from '@/components/landing/Features';
+import Ecosystem from '@/components/landing/Ecosystem';
+import Community from '@/components/landing/Community';
+import Newsletter from '@/components/landing/Newsletter';
 import Footer from '@/components/landing/Footer';
+import Partners from '@/components/landing/Partners';
 
 export default function Home() {
   return (
@@ -12,10 +13,11 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Packages />
-        <Testimonials />
-        <Schedule />
-        <SignUp />
+        <Partners />
+        <Features />
+        <Ecosystem />
+        <Community />
+        <Newsletter />
       </main>
       <Footer />
     </div>
