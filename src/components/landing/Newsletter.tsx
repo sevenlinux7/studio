@@ -9,7 +9,7 @@ export default function Newsletter() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold">Subscribe to our Newsletter</h2>
           <p className="mt-2 mb-8 text-muted-foreground text-lg">
-            Get the latest news and updates from Omchain.
+            Get the latest news about new courses, special offers, and learning tips.
           </p>
           <div className="flex max-w-md mx-auto">
             <Input type="email" placeholder="Enter your email" className="rounded-l-full rounded-r-none h-12 text-base bg-card/50 border-border/30 focus:border-primary" />

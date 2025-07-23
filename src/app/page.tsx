@@ -6,6 +6,7 @@ import Community from '@/components/landing/Community';
 import Newsletter from '@/components/landing/Newsletter';
 import Footer from '@/components/landing/Footer';
 import Partners from '@/components/landing/Partners';
+import Courses from '@/components/landing/Courses';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Partners />
         <Features />
+        <Courses />
         <Ecosystem />
         <Community />
         <Newsletter />

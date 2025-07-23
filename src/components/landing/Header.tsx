@@ -21,16 +21,16 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <div className="flex items-center gap-3">
           <OmchainLogo />
-          <h1 className="text-2xl font-bold text-foreground">Omchain</h1>
+          <h1 className="text-2xl font-bold text-foreground">Learnify</h1>
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm">
-          <Button variant="link" className="text-foreground">About</Button>
-          <Button variant="link" className="text-foreground">Features</Button>
-          <Button variant="link" className="text-foreground">Ecosystem</Button>
+          <Button variant="link" className="text-foreground">Courses</Button>
+          <Button variant="link" className="text-foreground">About Us</Button>
+          <Button variant="link" className="text-foreground">Pricing</Button>
           <Button variant="link" className="text-foreground">Community</Button>
         </div>
         <Button className="bg-primary hover:bg-accent text-primary-foreground rounded-full px-6 shadow-lg">
-          Launch App
+          Sign Up
         </Button>
       </div>
     </header>

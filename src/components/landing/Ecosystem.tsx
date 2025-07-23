@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 
 export default function Ecosystem() {
@@ -8,16 +7,16 @@ export default function Ecosystem() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold">Ecosystem</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">Learning Ecosystem</h2>
                 <p className="text-muted-foreground text-lg">
-                Empowering Scalability and Compliance, Omchain ecosystem is a collection of applications that work together to provide a powerful and user-friendly blockchain infrastructure.
+                Our ecosystem is a collection of tools and resources that work together to provide a powerful and user-friendly learning infrastructure.
                 </p>
             </div>
             <div className="grid grid-cols-2 gap-8">
                 <Card className="bg-card/50 border-border/30 hover:border-primary transition-colors">
                     <CardHeader>
                         <CardTitle className="flex items-center justify-between">
-                            <span>Explore Ecosystem</span>
+                            <span>Explore Tools</span>
                             <ArrowRight className="h-5 w-5 text-primary" />
                         </CardTitle>
                     </CardHeader>
@@ -25,7 +24,7 @@ export default function Ecosystem() {
                  <Card className="bg-card/50 border-border/30 hover:border-primary transition-colors">
                     <CardHeader>
                         <CardTitle className="flex items-center justify-between">
-                            <span>Join our Community</span>
+                            <span>Become an Instructor</span>
                             <ArrowRight className="h-5 w-5 text-primary" />
                         </CardTitle>
                     </CardHeader>

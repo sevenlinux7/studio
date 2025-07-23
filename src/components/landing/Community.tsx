@@ -4,18 +4,18 @@ import { MessagesSquare, Twitter, BookText } from "lucide-react";
 const communityLinks = [
   {
     icon: <MessagesSquare className="h-8 w-8 text-primary" />,
-    title: "Community Chat",
-    description: "Ask questions and chat with the fellow community members on Telegram.",
+    title: "Student Chat",
+    description: "Ask questions and chat with fellow learners and instructors on Telegram.",
   },
   {
     icon: <Twitter className="h-8 w-8 text-primary" />,
     title: "Twitter",
-    description: "Follow @omchain to get the latest news and updates from us.",
+    description: "Follow us on Twitter to get the latest news about new courses and updates.",
   },
   {
     icon: <BookText className="h-8 w-8 text-primary" />,
     title: "Forum",
-    description: "Want to contribute or want to contribute to the growth of the project? Join our community forum.",
+    description: "Want to discuss course topics or share your projects? Join our community forum.",
   },
 ];
 
@@ -25,7 +25,7 @@ export default function Community() {
       <div className="container mx-auto px-6">
         <div className="text-center space-y-2 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Join our community</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Be a part of the pioneers of the Omchain global community to lead the blockchain innovation</p>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Be a part of a global community of learners and educators to lead the future of online education.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {communityLinks.map((link) => (

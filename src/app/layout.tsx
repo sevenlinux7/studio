@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Omchain - Blockchain For Everyone',
-  description: 'Omchain is scalable and robust blockchain, built to satisfy the near real-time EVM need of everyone.',
+  title: 'Course Platform - Learn and Grow',
+  description: 'A platform for online courses to help you learn and grow.',
 };
 
 export default function RootLayout({

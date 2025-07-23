@@ -7,9 +7,9 @@ export default function Footer() {
         <p className="text-muted-foreground text-sm">&copy; Copyright 2024. All Rights Reserved.</p>
         <div className="flex items-center gap-4 mt-4 md:mt-0">
           <Button variant="link" className="text-muted-foreground">Home</Button>
-          <Button variant="link" className="text-muted-foreground">FAQ</Button>
-          <Button variant="link" className="text-muted-foreground">Blog</Button>
-          <Button variant="link" className="text-muted-foreground">Forum</Button>
+          <Button variant="link" className="text-muted-foreground">Courses</Button>
+          <Button variant="link" className="text-muted-foreground">About</Button>
+          <Button variant="link" className="text-muted-foreground">Contact</Button>
           <Button variant="link" className="text-muted-foreground">Terms of Service</Button>
           <Button variant="link" className="text-muted-foreground">Privacy Policy</Button>
         </div>

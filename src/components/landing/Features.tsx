@@ -1,26 +1,26 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ShieldCheck, Zap, Scale, Cpu } from "lucide-react";
+import { BookOpen, Video, Users, Award } from "lucide-react";
 
 const features = [
   {
-    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-    title: "EVM Compatibility",
-    description: "Proven security, established stack, tools, standards and enterprise adoption.",
+    icon: <BookOpen className="h-8 w-8 text-primary" />,
+    title: "Expert-Led Courses",
+    description: "Learn from industry professionals with real-world experience and insights.",
   },
   {
-    icon: <Zap className="h-8 w-8 text-primary" />,
-    title: "Scalability",
-    description: "Proven security, established stack, tools, standards and enterprise adoption.",
+    icon: <Video className="h-8 w-8 text-primary" />,
+    title: "Interactive Learning",
+    description: "Engage with hands-on projects, quizzes, and a supportive community.",
   },
   {
-    icon: <Scale className="h-8 w-8 text-primary" />,
-    title: "Security",
-    description: "Proven security, established stack, tools, standards and enterprise adoption.",
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: "Community Support",
+    description: "Connect with peers and mentors in our active learning community.",
   },
    {
-    icon: <Cpu className="h-8 w-8 text-primary" />,
-    title: "EVM Compatibility",
-    description: "Proven security, established stack, tools, standards and enterprise adoption.",
+    icon: <Award className="h-8 w-8 text-primary" />,
+    title: "Career Growth",
+    description: "Gain certificates and skills to advance your career and achieve your goals.",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Features() {
     <section id="features" className="py-12 md:py-24 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-2 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Why Choose Us?</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
