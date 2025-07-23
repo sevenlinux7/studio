@@ -19,15 +19,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/20 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
-        <div className="flex items-center gap-3">
+        <a href="#home" className="flex items-center gap-3">
           <OmchainLogo />
           <h1 className="text-2xl font-bold text-foreground">Learnify</h1>
-        </div>
+        </a>
         <div className="hidden md:flex items-center gap-6 text-sm">
-          <Button variant="link" className="text-foreground">Courses</Button>
-          <Button variant="link" className="text-foreground">About Us</Button>
-          <Button variant="link" className="text-foreground">Pricing</Button>
-          <Button variant="link" className="text-foreground">Community</Button>
+          <a href="#courses"><Button variant="link" className="text-foreground">Courses</Button></a>
+          <a href="#features"><Button variant="link" className="text-foreground">Features</Button></a>
+          <a href="#newsletter"><Button variant="link" className="text-foreground">Newsletter</Button></a>
+          <a href="#community"><Button variant="link" className="text-foreground">Community</Button></a>
         </div>
         <Button className="bg-primary hover:bg-accent text-primary-foreground rounded-full px-6 shadow-lg">
           Sign Up
@@ -36,3 +36,4 @@ export default function Header() {
     </header>
   );
 }
+

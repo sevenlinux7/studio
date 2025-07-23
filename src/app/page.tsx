@@ -13,13 +13,25 @@ export default function Home() {
     <div className="flex flex-col min-h-[100dvh] bg-background">
       <Header />
       <main className="flex-1">
-        <Hero />
+        <div id="home">
+          <Hero />
+        </div>
         <Partners />
-        <Features />
-        <Courses />
-        <Ecosystem />
-        <Community />
-        <Newsletter />
+        <div id="features">
+          <Features />
+        </div>
+        <div id="courses">
+          <Courses />
+        </div>
+        <div id="ecosystem">
+          <Ecosystem />
+        </div>
+        <div id="community">
+          <Community />
+        </div>
+        <div id="newsletter">
+          <Newsletter />
+        </div>
       </main>
       <Footer />
     </div>
