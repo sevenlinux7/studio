@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Course Platform - Learn and Grow',
-  description: 'A platform for online courses to help you learn and grow.',
+  title: 'УкрНавчання - Навчайтесь та Розвивайтесь',
+  description: 'Українська платформа онлайн-курсів для вашого навчання та розвитку.',
 };
 
 export default function RootLayout({

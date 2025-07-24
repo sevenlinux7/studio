@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Star } from "lucide-react";
 
@@ -17,29 +16,29 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <span className="text-sm font-medium text-white">Более 10,000 довольных студентов</span>
+            <span className="text-sm font-medium text-white">Більше 10,000 задоволених студентів</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent leading-tight">
-            Изучай будущее
-            <span className="block">уже сегодня</span>
+            Вивчай майбутнє
+            <span className="block">вже сьогодні</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Откройте для себя мир знаний с нашими экспертными курсами. 
-            Получите навыки, которые изменят вашу карьеру навсегда.
+            Відкрийте для себе світ знань з нашими експертними курсами. 
+            Отримайте навички, які змінять вашу кар'єру назавжди.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full px-8 py-4 text-lg font-semibold shadow-2xl hover:shadow-purple-500/25 transition-all duration-300">
-              Начать обучение
+              Почати навчання
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white/20 text-white hover:bg-white/10 rounded-full px-8 py-4 text-lg font-semibold backdrop-blur-sm">
               <Play className="mr-2 w-5 h-5" />
-              Смотреть демо
+              Дивитись демо
             </Button>
           </div>
 
@@ -47,11 +46,11 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2">500+</div>
-              <div className="text-gray-400">Курсов</div>
+              <div className="text-gray-400">Курсів</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2">50,000+</div>
-              <div className="text-gray-400">Студентов</div>
+              <div className="text-gray-400">Студентів</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2">4.9★</div>

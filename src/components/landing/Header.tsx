@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -22,7 +21,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#courses" className="text-gray-300 hover:text-white transition-colors">Курсы</a>
+            <a href="#courses" className="text-gray-300 hover:text-white transition-colors">Курси</a>
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">О нас</a>
             <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Цены</a>
             <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Контакты</a>

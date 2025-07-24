@@ -6,6 +6,7 @@ import Courses from '@/components/landing/Courses';
 import Stats from '@/components/landing/Stats';
 import Testimonials from '@/components/landing/Testimonials';
 import Pricing from '@/components/landing/Pricing';
+import AuthForm from '@/components/landing/AuthForm';
 import Footer from '@/components/landing/Footer';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Courses />
         <Testimonials />
         <Pricing />
+        <AuthForm />
       </main>
       <Footer />
     </div>
