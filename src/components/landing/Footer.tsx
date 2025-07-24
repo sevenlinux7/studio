@@ -9,14 +9,14 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-yellow-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">₿</span>
               </div>
-              <span className="text-xl font-bold text-white">CryptoEdu</span>
+              <span className="text-xl font-bold text-white">CryptoAcademy</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Провідна платформа для навчання крипто-трейдингу, яка допомагає освоїти торгівлю 
-              криптовалютами та побудувати успішну кар'єру в фінансах.
+              Провідна академія крипто-трейдингу з Києва, яка допомагає освоїти торгівлю 
+              криптовалютами та побудувати успішну кар'єру в цифрових фінансах.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-purple-600 transition-all duration-300">
@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center text-gray-300">
                 <Mail className="w-4 h-4 mr-2" />
-                info@cryptoedu.ua
+                info@cryptoacademy.ua
               </li>
               <li className="flex items-center text-gray-300">
                 <Phone className="w-4 h-4 mr-2" />
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 CryptoEdu. Всі права захищені.
+            © 2024 CryptoAcademy. Всі права захищені.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</a>
