@@ -8,8 +8,8 @@ export default function Pricing() {
   const plans = [
     {
       name: "Базовый",
-      price: "999",
-      period: "/месяц",
+      price: "$29",
+      period: "/місяць",
       description: "Идеально для начинающих",
       features: [
         "Доступ к 50+ курсам",
@@ -22,8 +22,8 @@ export default function Pricing() {
     },
     {
       name: "Профессиональный",
-      price: "1999",
-      period: "/месяц",
+      price: "$79",
+      period: "/місяць",
       description: "Для серьезного развития",
       features: [
         "Доступ ко всем курсам",
@@ -38,8 +38,8 @@ export default function Pricing() {
     },
     {
       name: "Корпоративный",
-      price: "9999",
-      period: "/месяц",
+      price: "$299",
+      period: "/місяць",
       description: "Для команд и компаний",
       features: [
         "Все возможности Pro",

@@ -9,8 +9,8 @@ export default function Courses() {
     {
       title: "Основи крипто-трейдингу",
       description: "Повний курс з основ торгівлі криптовалютами: від азів до першої прибуткової угоди",
-      price: "12,999₴",
-      originalPrice: "19,999₴",
+      price: "$399",
+      originalPrice: "$599",
       rating: 4.9,
       students: 3247,
       duration: "8 тижнів",
@@ -22,8 +22,8 @@ export default function Courses() {
     {
       title: "Технічний аналіз",
       description: "Професійний технічний аналіз: індикатори, патерни, стратегії торгівлі",
-      price: "18,999₴",
-      originalPrice: "29,999₴",
+      price: "$599",
+      originalPrice: "$899",
       rating: 4.8,
       students: 1834,
       duration: "12 тижнів",
@@ -35,8 +35,8 @@ export default function Courses() {
     {
       title: "DeFi та NFT",
       description: "Децентралізовані фінанси, стейкінг, фармінг доходності та торгівля NFT",
-      price: "22,999₴",
-      originalPrice: "35,999₴",
+      price: "$799",
+      originalPrice: "$1,199",
       rating: 4.9,
       students: 987,
       duration: "16 тижнів",
