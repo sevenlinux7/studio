@@ -1,25 +1,24 @@
+
 import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import Features from '@/components/landing/Features';
-import Ecosystem from '@/components/landing/Ecosystem';
-import Community from '@/components/landing/Community';
-import Newsletter from '@/components/landing/Newsletter';
-import Footer from '@/components/landing/Footer';
-import Partners from '@/components/landing/Partners';
 import Courses from '@/components/landing/Courses';
+import Stats from '@/components/landing/Stats';
+import Testimonials from '@/components/landing/Testimonials';
+import Pricing from '@/components/landing/Pricing';
+import Footer from '@/components/landing/Footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-background">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Header />
       <main className="flex-1">
         <Hero />
-        <Partners />
+        <Stats />
         <Features />
         <Courses />
-        <Ecosystem />
-        <Community />
-        <Newsletter />
+        <Testimonials />
+        <Pricing />
       </main>
       <Footer />
     </div>
