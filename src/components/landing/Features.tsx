@@ -1,45 +1,74 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Video, Users, Award } from "lucide-react";
 
-const features = [
-  {
-    icon: <BookOpen className="h-8 w-8 text-primary" />,
-    title: "Expert-Led Courses",
-    description: "Learn from industry professionals with real-world experience and insights.",
-  },
-  {
-    icon: <Video className="h-8 w-8 text-primary" />,
-    title: "Interactive Learning",
-    description: "Engage with hands-on projects, quizzes, and a supportive community.",
-  },
-  {
-    icon: <Users className="h-8 w-8 text-primary" />,
-    title: "Community Support",
-    description: "Connect with peers and mentors in our active learning community.",
-  },
-   {
-    icon: <Award className="h-8 w-8 text-primary" />,
-    title: "Career Growth",
-    description: "Gain certificates and skills to advance your career and achieve your goals.",
-  },
-];
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Brain, Users, Trophy, Zap, Shield, Globe } from "lucide-react";
 
 export default function Features() {
+  const features = [
+    {
+      icon: <Brain className="w-8 h-8" />,
+      title: "ИИ-ассистент",
+      description: "Персональный помощник для изучения материала и ответов на вопросы",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Живое сообщество",
+      description: "Общайтесь с единомышленниками и экспертами в реальном времени",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: <Trophy className="w-8 h-8" />,
+      title: "Сертификаты",
+      description: "Получайте признанные индустрией сертификаты после прохождения курсов",
+      gradient: "from-yellow-500 to-orange-500"
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "Быстрый старт",
+      description: "Начните обучение за 5 минут с нашей упрощенной системой",
+      gradient: "from-green-500 to-emerald-500"
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Гарантия качества",
+      description: "100% возврат средств в течение 30 дней, если не понравится",
+      gradient: "from-red-500 to-pink-500"
+    },
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: "Доступ везде",
+      description: "Учитесь с любого устройства в любой точке мира",
+      gradient: "from-indigo-500 to-purple-500"
+    }
+  ];
+
   return (
-    <section id="features" className="py-12 md:py-24 bg-secondary/20">
+    <section id="features" className="py-20 relative">
       <div className="container mx-auto px-6">
-        <div className="text-center space-y-2 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Why Choose Us?</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Почему выбирают нас?
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Мы создали платформу будущего для обучения. Современные технологии встречаются с проверенными методиками.
+          </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature) => (
-            <Card key={feature.title} className="bg-card/50 border-border/30 hover:bg-card/80 transition-colors hover:border-primary">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <Card key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:border-white/20 group">
               <CardHeader>
-                <div className="p-4 bg-primary/10 rounded-lg w-fit mb-4">{feature.icon}</div>
-                <CardTitle>{feature.title}</CardTitle>
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.gradient} flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  {feature.icon}
+                </div>
+                <CardTitle className="text-xl font-bold text-white">
+                  {feature.title}
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>{feature.description}</CardDescription>
+                <p className="text-gray-300 leading-relaxed">
+                  {feature.description}
+                </p>
               </CardContent>
             </Card>
           ))}

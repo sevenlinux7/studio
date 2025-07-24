@@ -1,37 +1,73 @@
-import { Button } from '../ui/button';
 
-const OmchainLogo = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="url(#paint0_linear_header)"/>
-    <path d="M16.0002 18.0002L8.00016 13.3335L16.0002 8.66683L24.0002 13.3335L16.0002 18.0002Z" fill="white" fillOpacity="0.5"/>
-    <path d="M8 15.3332V17.9998L16 22.6665L24 17.9998V15.3332L16 19.9998L8 15.3332Z" fill="white"/>
-    <defs>
-      <linearGradient id="paint0_linear_header" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#00F0FF"/>
-        <stop offset="1" stopColor="#00A3FF"/>
-      </linearGradient>
-    </defs>
-  </svg>
-);
+'use client';
 
+import { useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { Menu, X, BookOpen, User, Settings } from "lucide-react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/20 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-20 items-center justify-between px-6">
-        <div className="flex items-center gap-3">
-          <OmchainLogo />
-          <h1 className="text-2xl font-bold text-foreground">Learnify</h1>
+    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-black/20 border-b border-white/10">
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center">
+              <BookOpen className="w-5 h-5 text-white" />
+            </div>
+            <span className="text-xl font-bold text-white">EduPlatform</span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <a href="#courses" className="text-gray-300 hover:text-white transition-colors">Курсы</a>
+            <a href="#about" className="text-gray-300 hover:text-white transition-colors">О нас</a>
+            <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Цены</a>
+            <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Контакты</a>
+          </nav>
+
+          {/* Desktop CTA */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="ghost" className="text-gray-300 hover:text-white">
+              <User className="w-4 h-4 mr-2" />
+              Войти
+            </Button>
+            <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full">
+              Регистрация
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
-        <div className="hidden md:flex items-center gap-6 text-sm">
-          <Button variant="link" className="text-foreground">Courses</Button>
-          <Button variant="link" className="text-foreground">About Us</Button>
-          <Button variant="link" className="text-foreground">Pricing</Button>
-          <Button variant="link" className="text-foreground">Community</Button>
-        </div>
-        <Button className="bg-primary hover:bg-accent text-primary-foreground rounded-full px-6 shadow-lg">
-          Sign Up
-        </Button>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-white/10">
+            <nav className="flex flex-col space-y-4">
+              <a href="#courses" className="text-gray-300 hover:text-white transition-colors">Курсы</a>
+              <a href="#about" className="text-gray-300 hover:text-white transition-colors">О нас</a>
+              <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Цены</a>
+              <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Контакты</a>
+              <div className="flex flex-col space-y-2 pt-4">
+                <Button variant="ghost" className="text-gray-300 hover:text-white justify-start">
+                  <User className="w-4 h-4 mr-2" />
+                  Войти
+                </Button>
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                  Регистрация
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
