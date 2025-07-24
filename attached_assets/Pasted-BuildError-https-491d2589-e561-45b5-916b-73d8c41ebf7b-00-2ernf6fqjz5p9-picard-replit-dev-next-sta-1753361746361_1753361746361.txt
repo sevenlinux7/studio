@@ -1,0 +1,12 @@
+BuildError@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/%5Broot-of-the-server%5D__e2c08166._.js:17395:41
+renderWithHooks@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:13260:37
+updateFunctionComponent@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:16755:32
+beginWork@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:18388:32
+beginWork$1@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:23101:28
+performUnitOfWork@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:22402:24
+workLoopSync@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:22331:34
+renderRootSync@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:22308:21
+performConcurrentWorkOnRoot@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e073c.js:21732:84
+workLoop@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_3bfdc6a4._.js:291:56
+flushWork@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_3bfdc6a4._.js:270:28
+performWorkUntilDeadline@https://491d2589-e561-45b5-916b-73d8c41ebf7b-00-2ernf6fqjz5p9.picard.replit.dev/_next/static/chunks/node_modules_3bfdc6a4._.js:498:35
