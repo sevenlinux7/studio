@@ -7,43 +7,43 @@ import { Clock, Users, Star, TrendingUp } from "lucide-react";
 export default function Courses() {
   const courses = [
     {
-      title: "React + TypeScript",
-      description: "Создание современных веб-приложений с использованием React и TypeScript",
-      price: "15,999₽",
-      originalPrice: "25,999₽",
+      title: "Основи крипто-трейдингу",
+      description: "Повний курс з основ торгівлі криптовалютами: від азів до першої прибуткової угоди",
+      price: "12,999₴",
+      originalPrice: "19,999₴",
       rating: 4.9,
-      students: 2547,
-      duration: "12 недель",
-      level: "Средний",
-      category: "Frontend",
-      image: "🚀",
-      badge: "Хит продаж"
+      students: 3247,
+      duration: "8 тижнів",
+      level: "Початківець",
+      category: "Базовий",
+      image: "₿",
+      badge: "Хіт продажів"
     },
     {
-      title: "Python для Data Science",
-      description: "Полный курс по анализу данных и машинному обучению на Python",
-      price: "18,999₽",
-      originalPrice: "29,999₽",
+      title: "Технічний аналіз",
+      description: "Професійний технічний аналіз: індикатори, патерни, стратегії торгівлі",
+      price: "18,999₴",
+      originalPrice: "29,999₴",
       rating: 4.8,
       students: 1834,
-      duration: "16 недель",
-      level: "Начинающий",
-      category: "Data Science",
-      image: "🐍",
-      badge: "Новый курс"
+      duration: "12 тижнів",
+      level: "Просунутий",
+      category: "Аналіз",
+      image: "📈",
+      badge: "Новий курс"
     },
     {
-      title: "Mobile App Development",
-      description: "Разработка мобильных приложений на React Native для iOS и Android",
-      price: "22,999₽",
-      originalPrice: "35,999₽",
+      title: "DeFi та NFT",
+      description: "Децентралізовані фінанси, стейкінг, фармінг доходності та торгівля NFT",
+      price: "22,999₴",
+      originalPrice: "35,999₴",
       rating: 4.9,
       students: 987,
-      duration: "20 недель",
-      level: "Продвинутый",
-      category: "Mobile",
-      image: "📱",
-      badge: "Премиум"
+      duration: "16 тижнів",
+      level: "Експерт",
+      category: "DeFi",
+      image: "🚀",
+      badge: "Преміум"
     }
   ];
 
@@ -52,10 +52,10 @@ export default function Courses() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Популярные курсы
+            Популярні курси
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Изучайте самые востребованные технологии с ведущими экспертами индустрии
+            Вивчайте крипто-трейдинг з досвідченими трейдерами та аналітиками ринку
           </p>
         </div>
 
